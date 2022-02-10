@@ -1,0 +1,20 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "JUT.SU Flipping",
+  "version": "4.0",
+
+  // Recommended
+  "description": "Userscript для пролистывания опенинга",
+  "icons": {"32": "icon32.png"},
+  "page_action": {
+          "default_icon": {                    // optional
+            "32": "icon32.png"            // optional
+          }
+   },
+   "content_scripts": [
+    {
+        "matches": ["https://jut.su/*"],
+        "js": ["jutsuFlipping.js"]
+    }]
+}
